@@ -1,0 +1,100 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 20416290,
+            "tagId": 31789,
+            "name": "sequence",
+            "value": "M0207",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T11:33:10.294Z",
+            "updatedAt": "2024-03-05T11:33:10.294Z"
+        },
+        {
+            "id": 20416291,
+            "tagId": 31798,
+            "name": "daylight",
+            "value": null,
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T11:33:10.294Z",
+            "updatedAt": "2024-03-05T11:33:10.294Z"
+        },
+        {
+            "id": 20416292,
+            "tagId": 31802,
+            "name": "medium alt",
+            "value": null,
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T11:33:10.294Z",
+            "updatedAt": "2024-03-05T11:33:10.294Z"
+        },
+        {
+            "id": 20416293,
+            "tagId": 31805,
+            "name": "side view",
+            "value": null,
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T11:33:10.294Z",
+            "updatedAt": "2024-03-05T11:33:10.294Z"
+        }
+    ],
+    "size": {
+        "height": 540,
+        "width": 1024
+    },
+    "objects": [
+        {
+            "id": 151229069,
+            "classId": 6544596,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T11:33:10.297Z",
+            "updatedAt": "2024-03-05T11:33:10.297Z",
+            "tags": [
+                {
+                    "id": 109618345,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 2,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T11:33:10.296Z",
+                    "updatedAt": "2024-03-05T11:33:10.296Z"
+                },
+                {
+                    "id": 109618346,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T11:33:10.296Z",
+                    "updatedAt": "2024-03-05T11:33:10.296Z"
+                },
+                {
+                    "id": 109618347,
+                    "tagId": 31797,
+                    "name": "small occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T11:33:10.296Z",
+                    "updatedAt": "2024-03-05T11:33:10.296Z"
+                }
+            ],
+            "classTitle": "bus",
+            "points": {
+                "exterior": [
+                    [
+                        654,
+                        333
+                    ],
+                    [
+                        776,
+                        440
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

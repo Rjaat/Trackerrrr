@@ -1,0 +1,418 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 20465032,
+            "tagId": 31789,
+            "name": "sequence",
+            "value": "M0201",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.749Z",
+            "updatedAt": "2024-03-05T12:16:07.749Z"
+        },
+        {
+            "id": 20465033,
+            "tagId": 31798,
+            "name": "daylight",
+            "value": null,
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.749Z",
+            "updatedAt": "2024-03-05T12:16:07.749Z"
+        },
+        {
+            "id": 20465034,
+            "tagId": 31802,
+            "name": "medium alt",
+            "value": null,
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.749Z",
+            "updatedAt": "2024-03-05T12:16:07.749Z"
+        },
+        {
+            "id": 20465035,
+            "tagId": 31804,
+            "name": "front view",
+            "value": null,
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.749Z",
+            "updatedAt": "2024-03-05T12:16:07.749Z"
+        }
+    ],
+    "size": {
+        "height": 540,
+        "width": 1024
+    },
+    "objects": [
+        {
+            "id": 151481662,
+            "classId": 6544594,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.750Z",
+            "updatedAt": "2024-03-05T12:16:07.750Z",
+            "tags": [
+                {
+                    "id": 110331868,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 10,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.750Z",
+                    "updatedAt": "2024-03-05T12:16:07.750Z"
+                },
+                {
+                    "id": 110331869,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.750Z",
+                    "updatedAt": "2024-03-05T12:16:07.750Z"
+                },
+                {
+                    "id": 110331870,
+                    "tagId": 31794,
+                    "name": "no occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.750Z",
+                    "updatedAt": "2024-03-05T12:16:07.750Z"
+                }
+            ],
+            "classTitle": "car",
+            "points": {
+                "exterior": [
+                    [
+                        753,
+                        136
+                    ],
+                    [
+                        778,
+                        158
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 151481663,
+            "classId": 6544594,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.752Z",
+            "updatedAt": "2024-03-05T12:16:07.752Z",
+            "tags": [
+                {
+                    "id": 110331871,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 12,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.752Z",
+                    "updatedAt": "2024-03-05T12:16:07.752Z"
+                },
+                {
+                    "id": 110331872,
+                    "tagId": 31793,
+                    "name": "small out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.752Z",
+                    "updatedAt": "2024-03-05T12:16:07.752Z"
+                },
+                {
+                    "id": 110331873,
+                    "tagId": 31794,
+                    "name": "no occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.752Z",
+                    "updatedAt": "2024-03-05T12:16:07.752Z"
+                }
+            ],
+            "classTitle": "car",
+            "points": {
+                "exterior": [
+                    [
+                        811,
+                        206
+                    ],
+                    [
+                        843,
+                        229
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 151481664,
+            "classId": 6544594,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.755Z",
+            "updatedAt": "2024-03-05T12:16:07.755Z",
+            "tags": [
+                {
+                    "id": 110331874,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 13,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.754Z",
+                    "updatedAt": "2024-03-05T12:16:07.754Z"
+                },
+                {
+                    "id": 110331875,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.754Z",
+                    "updatedAt": "2024-03-05T12:16:07.754Z"
+                },
+                {
+                    "id": 110331876,
+                    "tagId": 31797,
+                    "name": "small occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.754Z",
+                    "updatedAt": "2024-03-05T12:16:07.754Z"
+                }
+            ],
+            "classTitle": "car",
+            "points": {
+                "exterior": [
+                    [
+                        773,
+                        261
+                    ],
+                    [
+                        802,
+                        289
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 151481665,
+            "classId": 6544594,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.756Z",
+            "updatedAt": "2024-03-05T12:16:07.756Z",
+            "tags": [
+                {
+                    "id": 110331877,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 14,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.756Z",
+                    "updatedAt": "2024-03-05T12:16:07.756Z"
+                },
+                {
+                    "id": 110331878,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.756Z",
+                    "updatedAt": "2024-03-05T12:16:07.756Z"
+                },
+                {
+                    "id": 110331879,
+                    "tagId": 31794,
+                    "name": "no occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.756Z",
+                    "updatedAt": "2024-03-05T12:16:07.756Z"
+                }
+            ],
+            "classTitle": "car",
+            "points": {
+                "exterior": [
+                    [
+                        705,
+                        358
+                    ],
+                    [
+                        744,
+                        397
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 151481666,
+            "classId": 6544594,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.757Z",
+            "updatedAt": "2024-03-05T12:16:07.757Z",
+            "tags": [
+                {
+                    "id": 110331880,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 16,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.757Z",
+                    "updatedAt": "2024-03-05T12:16:07.757Z"
+                },
+                {
+                    "id": 110331881,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.757Z",
+                    "updatedAt": "2024-03-05T12:16:07.757Z"
+                },
+                {
+                    "id": 110331882,
+                    "tagId": 31794,
+                    "name": "no occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.757Z",
+                    "updatedAt": "2024-03-05T12:16:07.757Z"
+                }
+            ],
+            "classTitle": "car",
+            "points": {
+                "exterior": [
+                    [
+                        907,
+                        10
+                    ],
+                    [
+                        923,
+                        24
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 151481667,
+            "classId": 6544594,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.759Z",
+            "updatedAt": "2024-03-05T12:16:07.759Z",
+            "tags": [
+                {
+                    "id": 110331883,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 42,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.759Z",
+                    "updatedAt": "2024-03-05T12:16:07.759Z"
+                },
+                {
+                    "id": 110331884,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.759Z",
+                    "updatedAt": "2024-03-05T12:16:07.759Z"
+                },
+                {
+                    "id": 110331885,
+                    "tagId": 31794,
+                    "name": "no occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.759Z",
+                    "updatedAt": "2024-03-05T12:16:07.759Z"
+                }
+            ],
+            "classTitle": "car",
+            "points": {
+                "exterior": [
+                    [
+                        976,
+                        33
+                    ],
+                    [
+                        992,
+                        49
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 151481668,
+            "classId": 6544596,
+            "objectId": null,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2024-03-05T12:16:07.761Z",
+            "updatedAt": "2024-03-05T12:16:07.761Z",
+            "tags": [
+                {
+                    "id": 110331886,
+                    "tagId": 31790,
+                    "name": "target id",
+                    "value": 43,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.760Z",
+                    "updatedAt": "2024-03-05T12:16:07.760Z"
+                },
+                {
+                    "id": 110331887,
+                    "tagId": 31791,
+                    "name": "no out",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.760Z",
+                    "updatedAt": "2024-03-05T12:16:07.760Z"
+                },
+                {
+                    "id": 110331888,
+                    "tagId": 31794,
+                    "name": "no occlusion",
+                    "value": null,
+                    "labelerLogin": "inbox@datasetninja.com",
+                    "createdAt": "2024-03-05T12:16:07.760Z",
+                    "updatedAt": "2024-03-05T12:16:07.760Z"
+                }
+            ],
+            "classTitle": "bus",
+            "points": {
+                "exterior": [
+                    [
+                        828,
+                        111
+                    ],
+                    [
+                        869,
+                        150
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

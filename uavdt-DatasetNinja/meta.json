@@ -1,0 +1,218 @@
+{
+    "classes": [
+        {
+            "title": "bus",
+            "shape": "rectangle",
+            "color": "#FFE119",
+            "geometry_config": {},
+            "id": 6544596,
+            "hotkey": ""
+        },
+        {
+            "title": "car",
+            "shape": "rectangle",
+            "color": "#E6194B",
+            "geometry_config": {},
+            "id": 6544594,
+            "hotkey": ""
+        },
+        {
+            "title": "truck",
+            "shape": "rectangle",
+            "color": "#3CB44B",
+            "geometry_config": {},
+            "id": 6544595,
+            "hotkey": ""
+        },
+        {
+            "title": "vehicle",
+            "shape": "rectangle",
+            "color": "#0082C8",
+            "geometry_config": {},
+            "id": 6544597,
+            "hotkey": ""
+        }
+    ],
+    "tags": [
+        {
+            "name": "bird view",
+            "value_type": "none",
+            "color": "#0F338A",
+            "id": 31806,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "daylight",
+            "value_type": "none",
+            "color": "#7C8A0F",
+            "id": 31798,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "fog",
+            "value_type": "none",
+            "color": "#8A0F1A",
+            "id": 31800,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "front view",
+            "value_type": "none",
+            "color": "#6A0F8A",
+            "id": 31804,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "high alt",
+            "value_type": "none",
+            "color": "#0F8A60",
+            "id": 31803,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "lagre occlusion",
+            "value_type": "none",
+            "color": "#0F448A",
+            "id": 31795,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "long term",
+            "value_type": "none",
+            "color": "#5E8A0F",
+            "id": 31807,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "low alt",
+            "value_type": "none",
+            "color": "#8A0F11",
+            "id": 31801,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "medium alt",
+            "value_type": "none",
+            "color": "#640F8A",
+            "id": 31802,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "medium occlusion",
+            "value_type": "none",
+            "color": "#8A490F",
+            "id": 31796,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "medium out",
+            "value_type": "none",
+            "color": "#0F8A25",
+            "id": 31792,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "night",
+            "value_type": "none",
+            "color": "#8A6E0F",
+            "id": 31799,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "no occlusion",
+            "value_type": "none",
+            "color": "#8A0F84",
+            "id": 31794,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "no out",
+            "value_type": "none",
+            "color": "#0F758A",
+            "id": 31791,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "sequence",
+            "value_type": "any_string",
+            "color": "#0F8A72",
+            "id": 31789,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "side view",
+            "value_type": "none",
+            "color": "#858A0F",
+            "id": 31805,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "small occlusion",
+            "value_type": "none",
+            "color": "#8A510F",
+            "id": 31797,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "small out",
+            "value_type": "none",
+            "color": "#8A0F23",
+            "id": 31793,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        },
+        {
+            "name": "target id",
+            "value_type": "any_number",
+            "color": "#318A0F",
+            "id": 31790,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        }
+    ],
+    "projectType": "images",
+    "projectSettings": {
+        "multiView": {
+            "enabled": false,
+            "tagName": null,
+            "tagId": null,
+            "isSynced": false
+        }
+    }
+}
