@@ -74,6 +74,115 @@ class VideoProcessor(VideoTransformerBase):
         processed_frame = self.tracker.process_frame(img, 30)  # Assume 30 FPS for live video
         return processed_frame
 
+# def main():
+#     st.title("🎥 Optical Flow Tracker Pro")
+
+#     # Sidebar
+#     with st.sidebar:
+#         st.header("Configuration")
+#         input_option = st.radio("Select Input Source", ["Upload Video", "Record from Camera"])
+
+#         if input_option == "Upload Video":
+#             uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "avi", "mov"])
+#         else:
+#             st.info("Click 'Start' below to begin camera recording")
+
+#         # Video processing options
+#         max_frames = st.number_input("Max Frames to Process", value=100, min_value=1)
+#         detection_interval = st.number_input("Detection Interval", value=5, min_value=1)
+
+#         st.markdown("---")
+#         st.subheader("About")
+#         st.info("Optical Flow Tracker Pro uses advanced algorithms to process videos. "
+#                 "Upload a video or record live from your camera, and adjust settings to customize processing.")
+
+#     # Main content area
+#     col1, col2 = st.columns(2)
+
+#     with col1:
+#         st.header("Original Video")
+#         original_video_container = st.empty()
+#         if input_option == "Upload Video" and uploaded_file is not None:
+#             # Display uploaded video
+#             tfile = tempfile.NamedTemporaryFile(delete=False)
+#             tfile.write(uploaded_file.read())
+#             original_video_container.video(tfile.name)
+#         elif input_option == "Record from Camera":
+#             # Live video recording
+#             ctx = webrtc_streamer(
+#                 key="camera",
+#                 video_processor_factory=VideoProcessor,
+#                 rtc_configuration=RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}),
+#             )
+
+#     with col2:
+#         st.header("Processed Video")
+#         processed_video_container = st.empty()
+
+#     # Process Video Button
+#     if st.button("Process Video", key="process_button"):
+#         if input_option == "Upload Video" and uploaded_file is not None:
+#             # Process uploaded video
+#             tracker = OptimizedOpticalFlowTracker()
+#             tracker.detection_interval = detection_interval
+
+#             cap = cv2.VideoCapture(tfile.name)
+#             width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+#             height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+#             fps = int(cap.get(cv2.CAP_PROP_FPS))
+
+#             frame_count = 0
+#             processed_frames = []
+
+#             progress_bar = st.progress(0)
+#             status_text = st.empty()
+
+#             while True:
+#                 ret, frame = cap.read()
+#                 if not ret or frame_count >= max_frames:
+#                     break
+
+#                 processed_frame = tracker.process_frame(frame, fps)
+#                 processed_frames.append(processed_frame)
+
+#                 # Update progress
+#                 progress = int((frame_count / max_frames) * 100)
+#                 progress_bar.progress(progress)
+#                 status_text.text(f"Processing: {progress}% complete")
+
+#                 frame_count += 1
+
+#             cap.release()
+
+#             # Save processed video
+#             output_file = "processed_video.mp4"
+#             out = cv2.VideoWriter(output_file, cv2.VideoWriter_fourcc(*'mp4v'), fps, (640, 640))
+#             for frame in processed_frames:
+#                 out.write(frame)
+#             out.release()
+
+#             # Display processed video
+#             processed_video_container.video(output_file)
+
+#             # Provide download link
+#             st.success("Video processing complete!")
+#             with open(output_file, "rb") as file:
+#                 btn = st.download_button(
+#                     label="Download processed video",
+#                     data=file,
+#                     file_name="processed_video.mp4",
+#                     mime="video/mp4"
+#                 )
+
+#             # Clean up the temporary file
+#             os.unlink(tfile.name)
+#         elif input_option == "Record from Camera":
+#             st.info("Processing live video. The processed frames are displayed in real-time above.")
+
+# if __name__ == "__main__":
+#     main()
+
+
 def main():
     st.title("🎥 Optical Flow Tracker Pro")
 
@@ -122,60 +231,70 @@ def main():
     # Process Video Button
     if st.button("Process Video", key="process_button"):
         if input_option == "Upload Video" and uploaded_file is not None:
-            # Process uploaded video
             tracker = OptimizedOpticalFlowTracker()
             tracker.detection_interval = detection_interval
 
-            cap = cv2.VideoCapture(tfile.name)
-            width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            fps = int(cap.get(cv2.CAP_PROP_FPS))
+            try:
+                cap = cv2.VideoCapture(tfile.name)
+                if not cap.isOpened():
+                    st.error("Error: Could not open video file.")
+                    return
 
-            frame_count = 0
-            processed_frames = []
+                width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+                height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+                fps = int(cap.get(cv2.CAP_PROP_FPS))
 
-            progress_bar = st.progress(0)
-            status_text = st.empty()
+                frame_count = 0
+                processed_frames = []
+                progress_bar = st.progress(0)
+                status_text = st.empty()
 
-            while True:
-                ret, frame = cap.read()
-                if not ret or frame_count >= max_frames:
-                    break
+                while True:
+                    ret, frame = cap.read()
+                    if not ret or frame_count >= max_frames:
+                        break
 
-                processed_frame = tracker.process_frame(frame, fps)
-                processed_frames.append(processed_frame)
+                    processed_frame = tracker.process_frame(frame, fps)
+                    processed_frames.append(processed_frame)
 
-                # Update progress
-                progress = int((frame_count / max_frames) * 100)
-                progress_bar.progress(progress)
-                status_text.text(f"Processing: {progress}% complete")
+                    # Update progress
+                    progress = int((frame_count / max_frames) * 100)
+                    progress_bar.progress(progress)
+                    status_text.text(f"Processing: {progress}% complete")
 
-                frame_count += 1
+                    frame_count += 1
 
-            cap.release()
+                cap.release()
 
-            # Save processed video
-            output_file = "processed_video.mp4"
-            out = cv2.VideoWriter(output_file, cv2.VideoWriter_fourcc(*'mp4v'), fps, (640, 640))
-            for frame in processed_frames:
-                out.write(frame)
-            out.release()
+                # Save processed video
+                output_file = "processed_video.mp4"
+                out = cv2.VideoWriter(output_file, cv2.VideoWriter_fourcc(*'mp4v'), fps, (width, height))
+                for frame in processed_frames:
+                    out.write(frame)
+                out.release()
 
-            # Display processed video
-            processed_video_container.video(output_file)
+                # Display processed video
+                processed_video_container.video(output_file)
 
-            # Provide download link
-            st.success("Video processing complete!")
-            with open(output_file, "rb") as file:
-                btn = st.download_button(
-                    label="Download processed video",
-                    data=file,
-                    file_name="processed_video.mp4",
-                    mime="video/mp4"
-                )
+                # Provide download link
+                st.success("Video processing complete!")
+                with open(output_file, "rb") as file:
+                    btn = st.download_button(
+                        label="Download processed video",
+                        data=file,
+                        file_name="processed_video.mp4",
+                        mime="video/mp4"
+                    )
 
-            # Clean up the temporary file
-            os.unlink(tfile.name)
+            except Exception as e:
+                st.error(f"An error occurred: {e}")
+            finally:
+                # Clean up temporary files
+                if os.path.exists(tfile.name):
+                    os.unlink(tfile.name)
+                if os.path.exists(output_file):
+                    os.unlink(output_file)
+
         elif input_option == "Record from Camera":
             st.info("Processing live video. The processed frames are displayed in real-time above.")
 
